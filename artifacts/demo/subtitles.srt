@@ -1,0 +1,160 @@
+1
+00:00:00,250 --> 00:00:03,687
+HANDOFF Ledger makes a release handoff inspectable.
+
+2
+00:00:03,687 --> 00:00:09,580
+This is an edited screenshot walkthrough of saved, verified local model executions.
+
+3
+00:00:09,580 --> 00:00:12,526
+SampleDock is our original fictional fixture.
+
+4
+00:00:12,526 --> 00:00:18,418
+The screens and receipts come from the actual application, with waiting time
+
+5
+00:00:18,418 --> 00:00:18,910
+abbreviated.
+
+6
+00:00:20,417 --> 00:00:23,358
+A release announcement says every check passed.
+
+7
+00:00:23,358 --> 00:00:28,401
+The records show three different decisions: blank display names are rejected, an
+
+8
+00:00:28,401 --> 00:00:33,863
+upgrade loses the saved locale, and the Japanese language review has not run.
+
+9
+00:00:33,863 --> 00:00:39,326
+This is synthetic evidence, designed to expose the difference between a failure and
+
+10
+00:00:39,326 --> 00:00:40,166
+missing evidence.
+
+11
+00:00:44,417 --> 00:00:49,360
+The running view is a captured moment, not continuous video.
+
+12
+00:00:49,360 --> 00:00:51,337
+Waiting time is abbreviated.
+
+13
+00:00:51,337 --> 00:00:54,798
+OpenMinion collects evidence through three read-only tools.
+
+14
+00:00:54,798 --> 00:00:58,752
+Its official schema interface then generates a report.
+
+15
+00:00:58,752 --> 00:01:03,201
+Pydantic and independent evidence checks decide whether it succeeds.
+
+16
+00:01:04,708 --> 00:01:09,043
+The model preserves all three states: supported, contradicted, and unknown.
+
+17
+00:01:09,043 --> 00:01:15,112
+It writes concrete findings for the next owner: investigate locale loss and perform the
+
+18
+00:01:15,112 --> 00:01:16,412
+missing Japanese review.
+
+19
+00:01:16,412 --> 00:01:22,481
+The application does not fill in a successful fallback report when the model omits
+
+20
+00:01:22,481 --> 00:01:23,348
+those findings.
+
+21
+00:01:28,708 --> 00:01:32,762
+The migration citation leads to the exact failed check.
+
+22
+00:01:32,762 --> 00:01:38,166
+Independent validation checks the source hash, the quoted excerpt, and the claim
+
+23
+00:01:38,166 --> 00:01:38,617
+classification.
+
+24
+00:01:38,617 --> 00:01:44,471
+A reviewer can inspect the evidence behind the conclusion, instead of treating a
+
+25
+00:01:44,471 --> 00:01:46,273
+persuasive summary as proof.
+
+26
+00:01:50,708 --> 00:01:53,822
+The captured run took 84.3 seconds.
+
+27
+00:01:53,822 --> 00:01:55,378
+Five calls succeeded;
+
+28
+00:01:55,378 --> 00:01:57,973
+a zero-index read was rejected.
+
+29
+00:01:57,973 --> 00:02:05,238
+The coverage guard required a bounded second Agent turn, which read a valid span.
+
+30
+00:02:05,238 --> 00:02:07,313
+Both validation layers passed.
+
+31
+00:02:07,313 --> 00:02:13,540
+Earlier fresh sessions needed no recovery: six successful calls in fifty-five seconds,
+
+32
+00:02:13,540 --> 00:02:15,616
+then seven in fifty-three.
+
+33
+00:02:15,616 --> 00:02:19,248
+These are fixture measurements, not general reliability.
+
+34
+00:02:20,750 --> 00:02:25,039
+An earlier valid JSON answer omitted unknowns and risks;
+
+35
+00:02:25,039 --> 00:02:26,945
+our verifier rejected it.
+
+36
+00:02:26,945 --> 00:02:29,804
+This prototype reads small structured files.
+
+37
+00:02:29,804 --> 00:02:34,569
+It does not run project tests or approve a release.
+
+38
+00:02:34,569 --> 00:02:37,428
+Its explanations still need human review.
+
+39
+00:02:37,428 --> 00:02:38,858
+Codex assisted development.
+
+40
+00:02:38,858 --> 00:02:44,100
+HANDOFF Ledger leaves the next owner a handoff they can inspect.
+

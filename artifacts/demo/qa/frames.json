@@ -1,0 +1,30 @@
+[
+  {
+    "file": "artifacts/demo/qa/frame-01.png",
+    "seconds": 4
+  },
+  {
+    "file": "artifacts/demo/qa/frame-02.png",
+    "seconds": 24.166666666666668
+  },
+  {
+    "file": "artifacts/demo/qa/frame-03.png",
+    "seconds": 48.16666666666667
+  },
+  {
+    "file": "artifacts/demo/qa/frame-04.png",
+    "seconds": 68.45833333333334
+  },
+  {
+    "file": "artifacts/demo/qa/frame-05.png",
+    "seconds": 92.45833333333334
+  },
+  {
+    "file": "artifacts/demo/qa/frame-06.png",
+    "seconds": 114.45833333333334
+  },
+  {
+    "file": "artifacts/demo/qa/frame-07.png",
+    "seconds": 144.5
+  }
+]

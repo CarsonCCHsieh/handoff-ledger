@@ -1,0 +1,178 @@
+{
+  "format": "edited screenshot walkthrough of saved real executions",
+  "fixture": "Original fictional SampleDock fixture",
+  "waiting_time": "abbreviated",
+  "continuous_screen_recording": false,
+  "audio": "Local Windows System.Speech",
+  "subtitle_timing": "Approximate word-weight timing against local narration duration",
+  "receipts": [
+    {
+      "receipt": "artifacts/demo/demo-run.json",
+      "sha256": "7fc3b5cd5a6ad0016045e35417000453a9f9ec45fbd71f824cdb9538a0d99a1d",
+      "elapsed_ms": 84348,
+      "total_tool_calls": 6,
+      "successful_tool_calls": 5,
+      "rejected_tool_calls": 1,
+      "tool_collection_turns": 2,
+      "typed_output_valid": true,
+      "semantic_validation_valid": true,
+      "sdk": "0.1.16",
+      "model": "qwen3.5:9b"
+    },
+    {
+      "receipt": "artifacts/attempt-7.json",
+      "sha256": "bb53a325c7443da265417543f4428bbd57c8e26c4e071e1b76148d15c3121fd2",
+      "elapsed_ms": 55317,
+      "total_tool_calls": 6,
+      "successful_tool_calls": 6,
+      "rejected_tool_calls": 0,
+      "tool_collection_turns": 1,
+      "typed_output_valid": true,
+      "semantic_validation_valid": true,
+      "sdk": "0.1.16",
+      "model": "qwen3.5:9b"
+    },
+    {
+      "receipt": "artifacts/repeat-2.json",
+      "sha256": "557dc04670b4982569f9fb5280390c2d336d90be53fa44dc528b5450b8966837",
+      "elapsed_ms": 53411,
+      "total_tool_calls": 7,
+      "successful_tool_calls": 7,
+      "rejected_tool_calls": 0,
+      "tool_collection_turns": 1,
+      "typed_output_valid": true,
+      "semantic_validation_valid": true,
+      "sdk": "0.1.16",
+      "model": "qwen3.5:9b"
+    }
+  ],
+  "captures": [
+    {
+      "file": "artifacts/demo/captures/overview.png",
+      "sha256": "5fdfb253e9506012d83946dc945416426e1f7cd5b47aba518e4a3ca2b64396dd"
+    },
+    {
+      "file": "artifacts/demo/captures/running.png",
+      "sha256": "3cc92bb1ad9dae25f18c70a5e0a4e6426d0d34b4fcbd8d6824a57a876a79be31"
+    },
+    {
+      "file": "artifacts/demo/captures/result.png",
+      "sha256": "e736bce958860a99ffa9e5d779d0bfd0eb46c695c70f57607eee946659da3d31"
+    },
+    {
+      "file": "artifacts/demo/captures/citation.png",
+      "sha256": "05b0ce8f6465b1cfb1523aa94f19d3026c4c55c65940ad9a350e356f9ce55f14"
+    },
+    {
+      "file": "artifacts/demo/captures/details.png",
+      "sha256": "954c0ec316c9a7fa64192adfb5699070ed6f04a231a668befae4eb77162cd8ae"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": "01-introduction",
+      "title": "A handoff someone else can inspect",
+      "capture": "artifacts/demo/captures/overview.png",
+      "detail_crop_normalized": null,
+      "duration_seconds": 20.166666666666668,
+      "speech_seconds": 18.6595,
+      "narration": "HANDOFF Ledger makes a release handoff inspectable. This is an edited screenshot walkthrough of saved, verified local model executions. SampleDock is our original fictional fixture. The screens and receipts come from the actual application, with waiting time abbreviated."
+    },
+    {
+      "chapter": "02-evidence",
+      "title": "One announcement. Three different decisions.",
+      "capture": "artifacts/demo/captures/overview.png",
+      "detail_crop_normalized": [
+        0.1,
+        0.47,
+        0.89,
+        1.0
+      ],
+      "duration_seconds": 24.0,
+      "speech_seconds": 19.7495,
+      "narration": "A release announcement says every check passed. The records show three different decisions: blank display names are rejected, an upgrade loses the saved locale, and the Japanese language review has not run. This is synthetic evidence, designed to expose the difference between a failure and missing evidence."
+    },
+    {
+      "chapter": "03-execution",
+      "title": "Real model execution, bounded read-only tools",
+      "capture": "artifacts/demo/captures/running.png",
+      "detail_crop_normalized": null,
+      "duration_seconds": 20.291666666666668,
+      "speech_seconds": 18.7845,
+      "narration": "The running view is a captured moment, not continuous video. Waiting time is abbreviated. OpenMinion collects evidence through three read-only tools. Its official schema interface then generates a report. Pydantic and independent evidence checks decide whether it succeeds."
+    },
+    {
+      "chapter": "04-handoff",
+      "title": "Keep failure and uncertainty visible",
+      "capture": "artifacts/demo/captures/citation.png",
+      "detail_crop_normalized": [
+        0.335,
+        0.59,
+        0.7,
+        0.93
+      ],
+      "duration_seconds": 24.0,
+      "speech_seconds": 18.6395,
+      "narration": "The model preserves all three states: supported, contradicted, and unknown. It writes concrete findings for the next owner: investigate locale loss and perform the missing Japanese review. The application does not fill in a successful fallback report when the model omits those findings."
+    },
+    {
+      "chapter": "05-citation",
+      "title": "Follow a conclusion to its exact source",
+      "capture": "artifacts/demo/captures/citation.png",
+      "detail_crop_normalized": [
+        0.11,
+        0.41,
+        0.7,
+        0.72
+      ],
+      "duration_seconds": 22.0,
+      "speech_seconds": 17.5645,
+      "narration": "The migration citation leads to the exact failed check. Independent validation checks the source hash, the quoted excerpt, and the claim classification. A reviewer can inspect the evidence behind the conclusion, instead of treating a persuasive summary as proof."
+    },
+    {
+      "chapter": "06-receipts",
+      "title": "Measure the workflow. Retain the evidence.",
+      "capture": "artifacts/demo/captures/details.png",
+      "detail_crop_normalized": null,
+      "duration_seconds": 30.041666666666668,
+      "speech_seconds": 28.5395,
+      "narration": "The captured run took 84.3 seconds. Five calls succeeded; a zero-index read was rejected. The coverage guard required a bounded second Agent turn, which read a valid span. Both validation layers passed. Earlier fresh sessions needed no recovery: six successful calls in fifty-five seconds, then seven in fifty-three. These are fixture measurements, not general reliability."
+    },
+    {
+      "chapter": "07-limits",
+      "title": "Useful failures. Honest boundaries.",
+      "capture": "artifacts/demo/captures/result.png",
+      "detail_crop_normalized": null,
+      "duration_seconds": 24.875,
+      "speech_seconds": 23.3495,
+      "narration": "An earlier valid JSON answer omitted unknowns and risks; our verifier rejected it. This prototype reads small structured files. It does not run project tests or approve a release. Its explanations still need human review. Codex assisted development. HANDOFF Ledger leaves the next owner a handoff they can inspect."
+    }
+  ],
+  "planned_duration_seconds": 165.375,
+  "output": {
+    "file": "artifacts/demo/handoff-ledger-demo.mp4",
+    "sha256": "d049804e85aedd672f312d26a9f00605a450107ce17858f5bd9da3956c14e4e7",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "165.416016",
+        "size": "4861439"
+      }
+    }
+  }
+}

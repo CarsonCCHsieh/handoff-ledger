@@ -1,0 +1,52 @@
+{
+  "output": {
+    "file": "artifacts/demo/handoff-ledger-demo.mp4",
+    "sha256": "d049804e85aedd672f312d26a9f00605a450107ce17858f5bd9da3956c14e4e7",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "165.416016",
+        "size": "4861439"
+      }
+    }
+  },
+  "visual_review": {
+    "chapters_reviewed": 7,
+    "additional_recovery_frame": "artifacts/demo/qa/frame-08-recovery.png",
+    "checks": [
+      "Actual application screenshots only; labelled detail crops",
+      "Readable English titles, burned subtitles, and disclosure footer",
+      "Captured rejection remains visible in the audit trail",
+      "Coverage guard and bounded second Agent turn stated explicitly",
+      "Prior frozen baseline distinguished from new captured execution",
+      "No private account, contact, key, or filesystem details visible in reviewed frames"
+    ]
+  },
+  "audio_analysis": {
+    "mean_volume_db": -20.8,
+    "max_volume_db": -2.3,
+    "non_silent": true,
+    "clipping_detected": false
+  },
+  "text_privacy_scan": "No matches for private user paths, email domains, bearer strings, API-key fields, or password fields in media scripts and exported narration/subtitles/manifest. This is a scoped review, not a guarantee about unrelated repository files.",
+  "cleanup": {
+    "regenerable_intermediate_files_removed": 32,
+    "bytes_released": 18706905,
+    "final_assets_deleted": false
+  }
+}

@@ -1,0 +1,13 @@
+HANDOFF Ledger makes a release handoff inspectable. This is an edited screenshot walkthrough of saved, verified local model executions. SampleDock is our original fictional fixture. The screens and receipts come from the actual application, with waiting time abbreviated.
+
+A release announcement says every check passed. The records show three different decisions: blank display names are rejected, an upgrade loses the saved locale, and the Japanese language review has not run. This is synthetic evidence, designed to expose the difference between a failure and missing evidence.
+
+The running view is a captured moment, not continuous video. Waiting time is abbreviated. OpenMinion collects evidence through three read-only tools. Its official schema interface then generates a report. Pydantic and independent evidence checks decide whether it succeeds.
+
+The model preserves all three states: supported, contradicted, and unknown. It writes concrete findings for the next owner: investigate locale loss and perform the missing Japanese review. The application does not fill in a successful fallback report when the model omits those findings.
+
+The migration citation leads to the exact failed check. Independent validation checks the source hash, the quoted excerpt, and the claim classification. A reviewer can inspect the evidence behind the conclusion, instead of treating a persuasive summary as proof.
+
+The captured run took 84.3 seconds. Five calls succeeded; a zero-index read was rejected. The coverage guard required a bounded second Agent turn, which read a valid span. Both validation layers passed. Earlier fresh sessions needed no recovery: six successful calls in fifty-five seconds, then seven in fifty-three. These are fixture measurements, not general reliability.
+
+An earlier valid JSON answer omitted unknowns and risks; our verifier rejected it. This prototype reads small structured files. It does not run project tests or approve a release. Its explanations still need human review. Codex assisted development. HANDOFF Ledger leaves the next owner a handoff they can inspect.
