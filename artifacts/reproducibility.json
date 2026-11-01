@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-01T23:07:18.743714+00:00",
+  "status": "two_independent_runs_succeeded",
+  "same_core_source_between_runs": true,
+  "source_hashes_at_freeze": {
+    ".gitignore": "bc82f5210a4e132198ec3ec62e764e48cb3754c263fccd777fd7b14f64eec194",
+    "docs/building-blocks-tested.md": "826eda188771bea4cc371776c84d45fbc146b8cd814dfac0bd0e231f4261ead8",
+    "fixtures/sample-project/checks.jsonl": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+    "fixtures/sample-project/manifest.json": "60eb1d0d1d6c41ad4bb96b45969b64a074c23fda3646bb9144f9fdc7b4cc17aa",
+    "fixtures/sample-project/release-notes.md": "0ca3a9cd84b6ee9a382f3987b261256c9f6d57994a99615281ec2421c574689d",
+    "pyproject.toml": "3a9760e9af226a0c23c93a91b256b4e9ab88507bbc6313064866b2e9055ccbd4",
+    "README.md": "913890771354c26b42a8ef4be2a3ed526c9c1b3c40cf20a122e0cdee13fef4f6",
+    "src/handoff_ledger/__init__.py": "c0dae2c5273658bbadc9136c86001f725debc484db1a1221bc7d29d168ea2a2b",
+    "src/handoff_ledger/__main__.py": "34889bbdf64cb42126a2a727650c1dd1f205626b35302d6d2a67880bb2139a90",
+    "src/handoff_ledger/evidence.py": "8fe305b2aff682ba774458a0ce902bf5693357f9efe5d4c9560acfe375118c6d",
+    "src/handoff_ledger/models.py": "6d9206625b2b047afec9575142ec54210cd343d11f68788e2f156327d1058a35",
+    "src/handoff_ledger/runner.py": "030c3dbd387b24d16d7b2cbcab525f274522f78298584a7f2926f9434e41f0e8",
+    "tests/test_evidence.py": "1a982d669f24b61821021231fffa0b2bb8b81bfcd62e1c278d18fb3687e32bac"
+  },
+  "runs": [
+    {
+      "receipt": "artifacts/attempt-7.json",
+      "sha256": "bb53a325c7443da265417543f4428bbd57c8e26c4e071e1b76148d15c3121fd2",
+      "log_sha256": "a2ddcacfb0132cd3a9adf5b123eeefa28925fdb44370ba52b7ad87fcef0f05e0",
+      "status": "succeeded",
+      "elapsed_ms": 55317,
+      "tool_attempts": 6,
+      "tool_succeeded": 6,
+      "tool_failed": 0,
+      "typed_output_valid": true,
+      "semantic_validation": {
+        "valid": true,
+        "errors": []
+      },
+      "collection_turns": 1,
+      "run_id": "ee33dad5b7f44e969320eb5900077bd6",
+      "session_id": "handoff-7df5f1da2dc9",
+      "sdk": {
+        "name": "openminion",
+        "version": "0.1.16",
+        "source_commit": "2ed5d8df3b7cd41ffb11bc96f6389436ca1c0f30",
+        "verified_install_commit": "2ed5d8df3b7cd41ffb11bc96f6389436ca1c0f30"
+      },
+      "model": {
+        "name": "qwen3.5:9b",
+        "ollama_version": "0.40.6",
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "initially_running": [
+          "qwen3.5:9b"
+        ]
+      },
+      "cleanup_error": null
+    },
+    {
+      "receipt": "artifacts/repeat-2.json",
+      "sha256": "557dc04670b4982569f9fb5280390c2d336d90be53fa44dc528b5450b8966837",
+      "log_sha256": "ae04f9acf6ed357f5c818c42a71e40ec7903f1aff20229d1bb2b77a99898d84c",
+      "status": "succeeded",
+      "elapsed_ms": 53411,
+      "tool_attempts": 7,
+      "tool_succeeded": 7,
+      "tool_failed": 0,
+      "typed_output_valid": true,
+      "semantic_validation": {
+        "valid": true,
+        "errors": []
+      },
+      "collection_turns": 1,
+      "run_id": "188ce9828096495cb6f4311254448d16",
+      "session_id": "handoff-e71a74885040",
+      "sdk": {
+        "name": "openminion",
+        "version": "0.1.16",
+        "source_commit": "2ed5d8df3b7cd41ffb11bc96f6389436ca1c0f30",
+        "verified_install_commit": "2ed5d8df3b7cd41ffb11bc96f6389436ca1c0f30"
+      },
+      "model": {
+        "name": "qwen3.5:9b",
+        "ollama_version": "0.40.6",
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "initially_running": [
+          "qwen3.5:9b"
+        ]
+      },
+      "cleanup_error": null
+    }
+  ],
+  "canonical_ui_receipt": {
+    "path": "artifacts/run.json",
+    "sha256": "bb53a325c7443da265417543f4428bbd57c8e26c4e071e1b76148d15c3121fd2"
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+    "count": 4,
+    "status": "passed",
+    "evidence": "Executed CLI test output in this development session; no model mocks."
+  },
+  "limits": [
+    "Both final runs used one collection turn: recovery branch source-reviewed, not runtime-exercised.",
+    "timeout_seconds applies per collection/provider call, not a shared whole-workflow deadline.",
+    "Synthetic fixture only; prototype success is not formal competition registration or submission."
+  ],
+  "procedure_state": {
+    "cli_runs_finished": true,
+    "runtime_closed": true,
+    "ollama_service_stopped": false,
+    "new_public_repo_or_submission_performed": false
+  }
+}

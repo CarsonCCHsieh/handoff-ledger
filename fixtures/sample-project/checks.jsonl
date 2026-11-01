@@ -1,0 +1,3 @@
+{"check_id":"blank-name","revision":"demo-r3","status":"passed","detail":"Empty display names return a validation error."}
+{"check_id":"migration","revision":"demo-r3","status":"failed","detail":"Upgrade from demo-r2 loses the saved locale."}
+{"check_id":"japanese-copy","revision":"demo-r3","status":"not_run","detail":"A Japanese language review has not been performed."}

@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "status": "succeeded",
+  "started_at": "2026-11-01T23:03:52.937782+00:00",
+  "project": "SampleDock (original synthetic evidence)",
+  "sdk": {
+    "name": "openminion",
+    "version": "0.1.16",
+    "source_commit": "2ed5d8df3b7cd41ffb11bc96f6389436ca1c0f30",
+    "verified_install_commit": "2ed5d8df3b7cd41ffb11bc96f6389436ca1c0f30"
+  },
+  "python": "3.13.2",
+  "model": {
+    "name": "qwen3.5:9b",
+    "ollama_version": "0.40.6",
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "initially_running": [
+      "qwen3.5:9b"
+    ]
+  },
+  "report": {
+    "claims": [
+      {
+        "id": "C01",
+        "title": "Blank display names are rejected",
+        "status": "supported",
+        "rationale": "The check for blank display names passed, confirming that empty names trigger a validation error.",
+        "evidence_refs": [
+          "checks:L1-L1"
+        ]
+      },
+      {
+        "id": "C02",
+        "title": "The upgrade migration passed",
+        "status": "contradicted",
+        "rationale": "The migration check failed because upgrading from demo-r2 loses the saved locale.",
+        "evidence_refs": [
+          "checks:L2-L2"
+        ]
+      },
+      {
+        "id": "C03",
+        "title": "Japanese copy is verified",
+        "status": "unknown",
+        "rationale": "The Japanese language review has not been performed yet.",
+        "evidence_refs": [
+          "checks:L3-L3"
+        ]
+      }
+    ],
+    "unknowns": [
+      "C03: The check for Japanese copy verification was not run."
+    ],
+    "risks": [
+      "C02: The upgrade migration failed, resulting in the loss of the saved locale during the transition from demo-r2."
+    ],
+    "references": [
+      {
+        "id": "checks:L1-L1",
+        "source": "checks.jsonl",
+        "line_start": 1,
+        "line_end": 1,
+        "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+        "excerpt": "{\"check_id\":\"blank-name\",\"revision\":\"demo-r3\",\"status\":\"passed\",\"detail\":\"Empty display names return a validation error.\"}"
+      },
+      {
+        "id": "checks:L2-L2",
+        "source": "checks.jsonl",
+        "line_start": 2,
+        "line_end": 2,
+        "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+        "excerpt": "{\"check_id\":\"migration\",\"revision\":\"demo-r3\",\"status\":\"failed\",\"detail\":\"Upgrade from demo-r2 loses the saved locale.\"}"
+      },
+      {
+        "id": "checks:L3-L3",
+        "source": "checks.jsonl",
+        "line_start": 3,
+        "line_end": 3,
+        "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+        "excerpt": "{\"check_id\":\"japanese-copy\",\"revision\":\"demo-r3\",\"status\":\"not_run\",\"detail\":\"A Japanese language review has not been performed.\"}"
+      }
+    ]
+  },
+  "tool_events": [
+    {
+      "sequence": 1,
+      "name": "list_evidence",
+      "arguments": {},
+      "status": "succeeded",
+      "result": {
+        "project": "SampleDock (original synthetic evidence)",
+        "revision": "demo-r3",
+        "claims": [
+          {
+            "id": "C01",
+            "title": "Blank display names are rejected",
+            "check_id": "blank-name",
+            "evidence_id": "checks",
+            "line": 1
+          },
+          {
+            "id": "C02",
+            "title": "The upgrade migration passed",
+            "check_id": "migration",
+            "evidence_id": "checks",
+            "line": 2
+          },
+          {
+            "id": "C03",
+            "title": "Japanese copy is verified",
+            "check_id": "japanese-copy",
+            "evidence_id": "checks",
+            "line": 3
+          }
+        ],
+        "evidence": [
+          {
+            "id": "checks",
+            "source": "checks.jsonl",
+            "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+            "line_count": 3
+          },
+          {
+            "id": "notes",
+            "source": "release-notes.md",
+            "sha256": "0ca3a9cd84b6ee9a382f3987b261256c9f6d57994a99615281ec2421c574689d",
+            "line_count": 3
+          }
+        ]
+      },
+      "elapsed_ms": 1
+    },
+    {
+      "sequence": 2,
+      "name": "read_span",
+      "arguments": {
+        "evidence_id": "checks",
+        "start": 1,
+        "end": 3
+      },
+      "status": "succeeded",
+      "result": {
+        "id": "checks:L1-L3",
+        "source": "checks.jsonl",
+        "line_start": 1,
+        "line_end": 3,
+        "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+        "excerpt": "{\"check_id\":\"blank-name\",\"revision\":\"demo-r3\",\"status\":\"passed\",\"detail\":\"Empty display names return a validation error.\"}\n{\"check_id\":\"migration\",\"revision\":\"demo-r3\",\"status\":\"failed\",\"detail\":\"Upgrade from demo-r2 loses the saved locale.\"}\n{\"check_id\":\"japanese-copy\",\"revision\":\"demo-r3\",\"status\":\"not_run\",\"detail\":\"A Japanese language review has not been performed.\"}"
+      },
+      "elapsed_ms": 0
+    },
+    {
+      "sequence": 3,
+      "name": "read_span",
+      "arguments": {
+        "evidence_id": "notes",
+        "start": 1,
+        "end": 3
+      },
+      "status": "succeeded",
+      "result": {
+        "id": "notes:L1-L3",
+        "source": "release-notes.md",
+        "line_start": 1,
+        "line_end": 3,
+        "sha256": "0ca3a9cd84b6ee9a382f3987b261256c9f6d57994a99615281ec2421c574689d",
+        "excerpt": "# SampleDock demo-r3\nThe draft announcement says all checks passed and Japanese copy is verified.\nThis is an unverified author statement. Consult the recorded checks before handoff."
+      },
+      "elapsed_ms": 0
+    },
+    {
+      "sequence": 4,
+      "name": "check_claim",
+      "arguments": {
+        "claim_id": "C01"
+      },
+      "status": "succeeded",
+      "result": {
+        "claim_id": "C01",
+        "claim": "Blank display names are rejected",
+        "classification": "supported",
+        "observation": {
+          "check_id": "blank-name",
+          "revision": "demo-r3",
+          "status": "passed",
+          "detail": "Empty display names return a validation error."
+        },
+        "reference": {
+          "id": "checks:L1-L1",
+          "source": "checks.jsonl",
+          "line_start": 1,
+          "line_end": 1,
+          "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+          "excerpt": "{\"check_id\":\"blank-name\",\"revision\":\"demo-r3\",\"status\":\"passed\",\"detail\":\"Empty display names return a validation error.\"}"
+        }
+      },
+      "elapsed_ms": 0
+    },
+    {
+      "sequence": 5,
+      "name": "check_claim",
+      "arguments": {
+        "claim_id": "C02"
+      },
+      "status": "succeeded",
+      "result": {
+        "claim_id": "C02",
+        "claim": "The upgrade migration passed",
+        "classification": "contradicted",
+        "observation": {
+          "check_id": "migration",
+          "revision": "demo-r3",
+          "status": "failed",
+          "detail": "Upgrade from demo-r2 loses the saved locale."
+        },
+        "reference": {
+          "id": "checks:L2-L2",
+          "source": "checks.jsonl",
+          "line_start": 2,
+          "line_end": 2,
+          "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+          "excerpt": "{\"check_id\":\"migration\",\"revision\":\"demo-r3\",\"status\":\"failed\",\"detail\":\"Upgrade from demo-r2 loses the saved locale.\"}"
+        }
+      },
+      "elapsed_ms": 0
+    },
+    {
+      "sequence": 6,
+      "name": "check_claim",
+      "arguments": {
+        "claim_id": "C03"
+      },
+      "status": "succeeded",
+      "result": {
+        "claim_id": "C03",
+        "claim": "Japanese copy is verified",
+        "classification": "unknown",
+        "observation": {
+          "check_id": "japanese-copy",
+          "revision": "demo-r3",
+          "status": "not_run",
+          "detail": "A Japanese language review has not been performed."
+        },
+        "reference": {
+          "id": "checks:L3-L3",
+          "source": "checks.jsonl",
+          "line_start": 3,
+          "line_end": 3,
+          "sha256": "4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0",
+          "excerpt": "{\"check_id\":\"japanese-copy\",\"revision\":\"demo-r3\",\"status\":\"not_run\",\"detail\":\"A Japanese language review has not been performed.\"}"
+        }
+      },
+      "elapsed_ms": 0
+    }
+  ],
+  "typed_output_valid": true,
+  "semantic_validation": {
+    "valid": true,
+    "errors": []
+  },
+  "runtime": {
+    "run_id": "ee33dad5b7f44e969320eb5900077bd6",
+    "session_id": "handoff-7df5f1da2dc9",
+    "run_state": "completed",
+    "result_id": "7804fd0e954341948f1e8c46b9ea7bf9",
+    "tool_collection_turns": [
+      {
+        "run_id": "ee33dad5b7f44e969320eb5900077bd6",
+        "session_id": "handoff-7df5f1da2dc9",
+        "run_state": "completed",
+        "result_id": "7804fd0e954341948f1e8c46b9ea7bf9"
+      }
+    ]
+  },
+  "structured_output": {
+    "method": "OpenMinion LLMClient.complete / schema-only submit_output / Ollama format",
+    "provider": "ollama",
+    "model": "qwen3.5:9b",
+    "ok": true,
+    "latency_ms": 18038,
+    "usage": {
+      "input_tokens": 916,
+      "output_tokens": 753,
+      "total_tokens": 1669,
+      "total_source": "derived",
+      "cached_tokens": null,
+      "cache_creation_tokens": null,
+      "reasoning_tokens": null
+    },
+    "finish_reason": "stop",
+    "raw_text": "{\n\"claims\": [\n{\n\"id\": \"C01\",\n\"title\": \"Blank display names are rejected\",\n\"status\": \"supported\",\n\"rationale\": \"The check for blank display names passed, confirming that empty names trigger a validation error.\",\n\"evidence_refs\": [\n\"checks:L1-L1\"\n]\n},\n{\n\"id\": \"C02\",\n\"title\": \"The upgrade migration passed\",\n\"status\": \"contradicted\",\n\"rationale\": \"The migration check failed because upgrading from demo-r2 loses the saved locale.\",\n\"evidence_refs\": [\n\"checks:L2-L2\"\n]\n},\n{\n\"id\": \"C03\",\n\"title\": \"Japanese copy is verified\",\n\"status\": \"unknown\",\n\"rationale\": \"The Japanese language review has not been performed yet.\",\n\"evidence_refs\": [\n\"checks:L3-L3\"\n]\n}\n],\n\"unknowns\": [\n\"C03: The check for Japanese copy verification was not run.\"\n],\n\"risks\": [\n\"C02: The upgrade migration failed, resulting in the loss of the saved locale during the transition from demo-r2.\"\n],\n\"references\": [\n{\n\"id\": \"checks:L1-L1\",\n\"source\": \"checks.jsonl\",\n\"line_start\": 1,\n\"line_end\": 1,\n\"sha256\": \"4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0\",\n\"excerpt\": \"{\\\"check_id\\\":\\\"blank-name\\\",\\\"revision\\\":\\\"demo-r3\\\",\\\"status\\\":\\\"passed\\\",\\\"detail\\\":\\\"Empty display names return a validation error.\\\"}\"\n},\n{\n\"id\": \"checks:L2-L2\",\n\"source\": \"checks.jsonl\",\n\"line_start\": 2,\n\"line_end\": 2,\n\"sha256\": \"4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0\",\n\"excerpt\": \"{\\\"check_id\\\":\\\"migration\\\",\\\"revision\\\":\\\"demo-r3\\\",\\\"status\\\":\\\"failed\\\",\\\"detail\\\":\\\"Upgrade from demo-r2 loses the saved locale.\\\"}\"\n},\n{\n\"id\": \"checks:L3-L3\",\n\"source\": \"checks.jsonl\",\n\"line_start\": 3,\n\"line_end\": 3,\n\"sha256\": \"4cabe7018fa769fce6265a7d3b1c4fa54532d86f6a7adc7bbb78c8671d6ed7c0\",\n\"excerpt\": \"{\\\"check_id\\\":\\\"japanese-copy\\\",\\\"revision\\\":\\\"demo-r3\\\",\\\"status\\\":\\\"not_run\\\",\\\"detail\\\":\\\"A Japanese language review has not been performed.\\\"}\"\n}\n]\n}",
+    "schema_sha256": "e1e2b20831c82cc49a012aaafed24e48c4bf07610a4057ae51402e54be207192",
+    "returned_tool_names": [
+      "submit_output"
+    ]
+  },
+  "elapsed_ms": 55317,
+  "agent_response": "handoff: Review Complete. Claim C01 is supported by passed checks. Claim C02 is contradicted as the migration check failed. Claim C03 remains unknown because the Japanese copy check was not run."
+}

@@ -1,0 +1,7 @@
+.venv/
+.tmp/
+.state/
+.openminion/
+__pycache__/
+*.egg-info/
+artifacts/

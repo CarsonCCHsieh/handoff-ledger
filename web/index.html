@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A local agent workspace that checks release claims against the evidence behind them.">
+  <title>HANDOFF Ledger — Keep the proof</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="HANDOFF Ledger home"><span class="mark" aria-hidden="true">H</span> HANDOFF<span class="light">LEDGER</span></a>
+    <div class="top-meta"><span class="status-dot" aria-hidden="true"></span> Local workspace <span class="separator">/</span> <span>01</span></div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="workspace-title">
+      <div><p class="eyebrow">A BETTER WAY TO LEAVE WORK BEHIND</p><h1 id="workspace-title">Hand off work.<br><span>Keep the proof.</span></h1><p class="lede">An agent reads the evidence behind a release, finds the gaps, and leaves a handoff someone else can trust.</p></div>
+      <div class="review-action"><span class="fixture-label">SYNTHETIC PROJECT · NO ACCOUNT CONNECTION</span><button id="run-button" type="button">Run evidence review <span aria-hidden="true">↗</span></button><p id="run-note">Uses the installed local model. Nothing to upload.</p></div>
+    </section>
+    <section class="workspace" aria-label="Evidence review workspace">
+      <aside class="evidence-panel">
+        <div class="panel-heading"><h2>Source evidence</h2><span id="file-count" class="count">—</span></div>
+        <p class="panel-description">Read the same files the agent can see.</p>
+        <div id="file-list" class="file-list" aria-label="Evidence files"><p class="muted">Loading fixture…</p></div>
+        <div class="source-reader"><div id="source-title" class="source-title" aria-live="polite">Choose a file</div><pre id="source-content" tabindex="0" aria-label="Selected evidence contents"></pre></div>
+        <p class="source-footnote">Original demo data. No personal project files.</p>
+      </aside>
+      <section class="review-panel" aria-labelledby="review-title">
+        <div class="panel-heading"><h2 id="review-title">Release handoff</h2><span id="run-status" class="badge neutral">Not run</span></div>
+        <div id="empty-state" class="empty-state"><div class="empty-symbol" aria-hidden="true">↳</div><h3>Every claim needs a trail.</h3><p>Start a review to see what the files support, what they contradict, and what is still unknown.</p><div class="legend"><span><i class="supported"></i>Supported</span><span><i class="contradicted"></i>Contradicted</span><span><i class="unknown"></i>Unknown</span></div></div>
+        <div id="running-state" class="running-state" hidden><span class="spinner" aria-hidden="true"></span><h3>Following the evidence…</h3><p>The local agent is reading the fixed fixture. The report appears when the real run finishes.</p><span id="elapsed" class="elapsed">0s</span></div>
+        <div id="failure-state" class="failure-state" role="alert" hidden></div>
+        <div id="report" hidden><div id="claim-summary" class="claim-summary"></div><div id="claims" class="claims"></div><section id="unknowns-section" class="notes-section" hidden><h3>Still unknown</h3><ul id="unknowns"></ul></section><section id="risks-section" class="notes-section" hidden><h3>For the next owner</h3><ul id="risks"></ul></section></div>
+      </section>
+      <aside class="trail-panel" aria-labelledby="trail-title"><div class="panel-heading"><h2 id="trail-title">The audit trail</h2></div><p class="panel-description">Evidence checks and actual tool calls stay visible.</p><div class="trail-label">REFERENCE VALIDATION</div><div id="validation" class="validation">Waiting for a real run.</div><div class="trail-label">TOOL ACTIVITY</div><ol id="tool-events" class="tool-events"><li class="muted">No tool calls yet.</li></ol><details class="run-details"><summary>Run details</summary><dl id="run-details"><dt>Model</dt><dd>Not run</dd><dt>Runtime</dt><dd>OpenMinion</dd></dl></details></aside>
+    </section>
+  </main>
+  <footer><span>HANDOFF / 001</span><span>A summary is useful. A verifiable trail is better.</span><span>ORIGINAL LOCAL PROTOTYPE</span></footer>
+</body>
+</html>
