@@ -3,8 +3,8 @@
 **Master cut: 4 minutes 20 seconds; condensed cut: 2 minutes 30 seconds.** These
 are planning scripts, distinct from the completed 165.416-second English-narrated,
 captioned [local demo](../artifacts/demo/handoff-ledger-demo.mp4). The completed
-cut is an edited screenshot walkthrough of saved real executions and has not
-been publicly uploaded. Its newer recovery run is documented in
+cut is an edited screenshot walkthrough of saved real executions included in
+this repository. Its newer recovery run is documented in
 [the captured execution record](demo-execution.md); the suggested cuts below do
 not establish the timing or exact narration of that finished video.
 
@@ -30,7 +30,7 @@ Use the master cut below for precise evidence and navigation details.
 | 2:03–2:30 | Final workspace with readable limitations caption | This prototype reads small structured files; it does not run tests or approve a release. The initial clean runs needed no recovery; a later demo passed after one rejected read and a bounded second Agent turn. Codex assisted development. Real tool events and independent checks support a handoff someone else can inspect. |
 
 The short cut may leave detailed registration status to the accompanying written
-draft, but must not imply registration, submission, publication, or a prize. No
+draft, but must not imply unverified registration, submission, publication, or a prize. No
 new live run is required for either cut.
 
 ## Recording setup

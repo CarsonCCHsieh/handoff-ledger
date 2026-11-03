@@ -107,7 +107,7 @@ The completed [local demo video](../artifacts/demo/handoff-ledger-demo.mp4) is
 165.416 seconds long, with English narration and captions. It is an edited
 screenshot walkthrough of saved real executions, rather than a continuous screen
 recording; shortened waits do not establish a new on-camera inference duration.
-It has not been publicly uploaded.
+The video is included in this repository; formal event submission remains incomplete.
 
 Four integrity tests also pass: the source hash/path boundary, rejection of altered
 citations or classifications, rejection of changed evidence, and preservation of
