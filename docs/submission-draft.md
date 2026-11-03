@@ -85,17 +85,29 @@ distributed Cortensor network.
 
 ## Verified execution
 
-Two independent fresh runtime sessions completed with the same core source:
+Two independent fresh runtime sessions completed with the same core source. A
+later demonstration run also completed and exercised bounded recovery:
 
 | Receipt | Actual tool calls | Typed output | Evidence verification | Elapsed |
 | --- | --- | --- | --- | --- |
 | `artifacts/attempt-7.json` | 6 succeeded, 0 failed | Passed | Passed | 55.317 s |
 | `artifacts/repeat-2.json` | 7 succeeded, 0 failed | Passed | Passed | 53.411 s |
+| `artifacts/demo/demo-run.json` | 5 succeeded, 1 rejected | Passed | Passed | 84.348 s |
 
-Both cover all three claims and all three tool types. Their raw model JSON matches
-the saved report. Different valid tool sequences are recorded rather than hidden.
-These are measurements of this local fixture and environment, not a general speed
-or reliability benchmark.
+All three cover all three claims and all three tool types. Their raw model JSON
+matches the saved report. The first two runs used one collection turn each. In the
+later demo, a zero-based `read_span` was rejected; the first collection turn then
+lacked a successful read, so the coverage guard requested one bounded second Agent
+turn. That turn read a valid span before report generation. The rejected call stays
+visible in the receipt. These are measurements of this local fixture and
+environment, not a general speed or reliability benchmark. The
+[captured execution record](demo-execution.md) documents the separate demo result.
+
+The completed [local demo video](../artifacts/demo/handoff-ledger-demo.mp4) is
+165.416 seconds long, with English narration and captions. It is an edited
+screenshot walkthrough of saved real executions, rather than a continuous screen
+recording; shortened waits do not establish a new on-camera inference duration.
+It has not been publicly uploaded.
 
 Four integrity tests also pass: the source hash/path boundary, rejection of altered
 citations or classifications, rejection of changed evidence, and preservation of
@@ -119,8 +131,9 @@ unknowns or contradictions, and the model supplies explanatory text.
 treated as write-capable by the SDK's default metadata. Declaring the actual
 read-only scope fixed our configuration while preserving policy. A separate run
 skipped a required tool; the coverage guard rejected it. The code now permits at
-most one policy-bound recovery turn. Neither final successful run needed that
-branch, so its runtime behavior is not claimed as tested.
+most one policy-bound recovery turn. Neither initial clean run needed that branch;
+the later demo exercised it successfully after a rejected read. This establishes
+one observed recovery case, not exhaustive recovery testing.
 
 ## Limitations and next steps
 
@@ -131,9 +144,10 @@ records, or approve a release. SHA-256 detects a mismatch against the manifest;
 it does not establish who produced the evidence. Natural-language explanations
 still need human review.
 
-The two successful runs establish a working local demonstration, not a statistical
-reliability claim. The missing-coverage recovery branch is source-reviewed but was
-not exercised in those runs. Timeout settings apply per collection/provider call,
+The two initial clean runs and the separate successful demo establish a working
+local demonstration, not a statistical reliability claim. The demo provides one
+runtime example of the missing-coverage recovery branch; the original clean-run
+receipts remain unchanged. Timeout settings apply per collection/provider call,
 not as a single shared deadline for the entire workflow.
 
 Useful next steps are documented adapters for CI-produced evidence, explicit
@@ -158,7 +172,7 @@ technical narrative; public source and video URLs are not invented here.
 
 Before formal delivery, resolve the dedicated event repository and current entry
 instructions, verify the remaining eligibility/entry fields, publish only the
-approved sanitized source/evidence bundle, record the actual demonstration, and
+approved sanitized source/evidence bundle and the completed local demo, and
 complete the required entry and delivery steps. A local prototype or draft does
 not count as joining or submitting. After confirmed submission, add the approved
 showcase to Microusada and clean expendable process resources while retaining the

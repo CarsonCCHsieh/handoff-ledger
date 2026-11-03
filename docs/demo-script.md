@@ -1,7 +1,12 @@
 # HANDOFF Ledger — demonstration script
 
-**Master cut: 4 minutes 20 seconds; condensed cut: 2 minutes 30 seconds.** This is a planned recording, not a claim
-that a video has already been recorded or uploaded.
+**Master cut: 4 minutes 20 seconds; condensed cut: 2 minutes 30 seconds.** These
+are planning scripts, distinct from the completed 165.416-second English-narrated,
+captioned [local demo](../artifacts/demo/handoff-ledger-demo.mp4). The completed
+cut is an edited screenshot walkthrough of saved real executions and has not
+been publicly uploaded. Its newer recovery run is documented in
+[the captured execution record](demo-execution.md); the suggested cuts below do
+not establish the timing or exact narration of that finished video.
 
 The default walkthrough presents the saved output of real, verified model runs.
 Say that explicitly. Do not click the run button and imply a new execution took
@@ -22,7 +27,7 @@ Use the master cut below for precise evidence and navigation details.
 | 0:42–1:08 | Claim cards, migration citation, highlighted source line 2 | The report preserves supported, contradicted and unknown claims. A citation takes the reviewer to the migration failure. The independent verifier checks the source hash, exact excerpt and classification. The handoff keeps the locale defect and missing review visible. |
 | 1:08–1:38 | Audit trail, attempt-7 and repeat-2 receipt facts | OpenMinion really called the read-only tools. Its official schema interface then generated the report, followed by Pydantic and evidence checks. Two fresh sessions passed: six successful calls in fifty-five seconds, then seven in fifty-three seconds. These are recorded timings for this fixture. |
 | 1:38–2:03 | Verified unknown/risk text and documented earlier rejection | An earlier response was valid JSON but hid the unknowns and risks in empty lists. The verifier rejected it. The current schema requires visible findings, and the model writes their explanations. Code does not fill in a successful fallback report. |
-| 2:03–2:30 | Final workspace with readable limitations caption | This prototype reads small structured files; it does not run tests or approve a release. Its optional recovery branch was not exercised in the final runs. Codex assisted development. Real tool events and independent checks support the result: a handoff someone else can inspect. |
+| 2:03–2:30 | Final workspace with readable limitations caption | This prototype reads small structured files; it does not run tests or approve a release. The initial clean runs needed no recovery; a later demo passed after one rejected read and a bounded second Agent turn. Codex assisted development. Real tool events and independent checks support a handoff someone else can inspect. |
 
 The short cut may leave detailed registration status to the accompanying written
 draft, but must not imply registration, submission, publication, or a prize. No
@@ -155,8 +160,10 @@ or invented public links.
 
 > This prototype reads small structured evidence files. It does not run a
 > project's tests or approve a release, and its explanations still need human
-> review. Both final runs completed without the optional missing-tool recovery
-> turn, so we do not claim that branch was runtime-tested. Codex assisted the
+> review. Both initial clean runs completed without the missing-tool recovery
+> turn. A later demo exercised that bounded turn after a rejected read and passed
+> both validation layers. That is one recovery example, not a reliability study.
+> Codex assisted the
 > implementation and debugging; real SDK events and independent checks support
 > the result. HANDOFF Ledger leaves the next owner a summary they can inspect.
 

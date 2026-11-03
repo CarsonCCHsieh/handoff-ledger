@@ -73,9 +73,19 @@ This is a factual development log. Failed attempts are retained as failures.
 9. `artifacts/repeat-2.json`: a fresh runtime/session repeated the unchanged
    workflow. Seven tool calls all succeeded; Pydantic and independent verification
    again passed, in 53,411 ms. Its specific findings were also model-generated.
-   Both final runs used one collection turn; neither exercised the newly bounded
-   missing-coverage recovery branch. That branch has source review, not a claimed
-   successful runtime test. No further inference was started after this repetition.
+   Both initial clean runs used one collection turn; neither exercised the newly
+   bounded missing-coverage recovery branch. At this initial freeze, the branch
+   had source review but no successful runtime test. The later demonstration is
+   recorded separately below; the two original receipts remain unchanged.
+10. `artifacts/demo/demo-run.json`: a later UI-started demonstration completed in
+    84,348 ms. Six tool attempts were recorded: five succeeded, and a zero-based
+    `read_span(checks, 0, 3)` was rejected. The first collection turn therefore
+    lacked a successful `read_span`; the coverage guard requested one bounded
+    second Agent turn, which read `checks` line 1 successfully. Pydantic and
+    independent semantic/citation verification passed. The two collection run IDs
+    share one session. This is one real successful coverage-recovery case, not
+    exhaustive recovery testing. See the [captured execution record](demo-execution.md)
+    for the receipt hash and the distinction from the two initial clean runs.
 
 ## Independent checks
 
