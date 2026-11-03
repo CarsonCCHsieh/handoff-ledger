@@ -178,4 +178,6 @@ or invented public links.
   the exported video's actual duration and readability before using it.
 - Registration and formal submission remain incomplete. The dedicated event
   submission repository URL has not been resolved in the verified materials.
-  Add real source/video/delivery links only after those steps occur.
+  [Source](https://github.com/CarsonCCHsieh/handoff-ledger) and the
+  [demo video](../artifacts/demo/handoff-ledger-demo.mp4) are public. Add the formal
+  delivery receipt only after submission actually occurs.

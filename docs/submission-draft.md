@@ -167,13 +167,13 @@ OpenMinion is the attributed Apache-2.0 SDK dependency.
 
 The verified event materials request a useful repeatable OpenMinion workflow, a
 real model-backed run, a public reproducible project, a one-to-five-minute demo,
-and Building Blocks Tested / What We Learned notes. This draft addresses the
-technical narrative; public source and video URLs are not invented here.
+and Building Blocks Tested / What We Learned notes. The
+[public source](https://github.com/CarsonCCHsieh/handoff-ledger) and
+[demo video](../artifacts/demo/handoff-ledger-demo.mp4) are now available.
 
 Before formal delivery, resolve the dedicated event repository and current entry
-instructions, verify the remaining eligibility/entry fields, publish only the
-approved sanitized source/evidence bundle and the completed local demo, and
-complete the required entry and delivery steps. A local prototype or draft does
+instructions, verify the remaining eligibility/entry fields, and complete the
+required entry and delivery steps. Public materials or a local prototype do
 not count as joining or submitting. After confirmed submission, add the approved
 showcase to Microusada and clean expendable process resources while retaining the
 final deliverables and receipts.
